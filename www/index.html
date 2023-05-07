@@ -11,7 +11,51 @@
     </script>
 </head>
 <body>
-	<br />
-    This is a template for Monaca app.
+    <div class="container">
+        <div class="content">
+            <div class="insert-name">
+                <h2>Insira seu nome</h2>
+                <input type="text" name="username" id="username" placeholder="Insira aqui seu nome">
+                <div class="btnInsert">
+                  <div>
+                    <input type="button" name="btnCadastrarInicio" value="Cadastrar no inicio" onclick="VetorUnshift()">
+                    <input type="button" name="btnRemoverInicio" value="Remover no inicio" onclick="VetorUnshiftDelete()">
+                  </div>
+                  <div>
+                    <input type="button" name="btnCadastrarFinal" value="Cadastrar no final" onclick="VetorPush()">
+                    <input type="button" name="btnRemoverFinal" value="Remover no final" onclick="VetorPushDelete()">
+                  </div>
+                </div>
+              </div>
+            <div class="show">
+                <div class="show-title">
+                    <h2>Exibir</h2>
+                </div>
+                <div class="btnShow">
+                    <input type="button" name="btnExibir" value="Exibir" onclick="Exibir()">
+                </div>
+            </div>
+            <div class="search">
+                <div class="search-title">
+                    <h2>Pesquisar</h2>
+                </div>
+                <div class="btnSearch">
+                    <input type="number" name="valorSearch" id="valorSearch" placeholder="Valor do que deseja pesquisar">
+                    <input type="button" name="btnSearch" value="Pesquisar" onclick="Search()">
+                </div>
+            </div>
+            <div class="list">
+                <div class="list-title">
+                    <h2>Listar</h2>
+                </div>
+                <div class="btnList">
+                    <input type="button" name="btnListar" value="Listar" onclick="Listar()">
+                    <ol id="listarNomes"></ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="components/script.js"></script>
 </body>
 </html>
